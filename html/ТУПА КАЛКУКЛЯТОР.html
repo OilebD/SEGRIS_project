@@ -38,6 +38,10 @@
 			<input class="bt" class="bt1" type="button" name="b0" value="0" OnClick="tablo.value += '0'">
 			<input class="bt" type="button" name="ravno" id="ravno" value="=" OnClick="rravvno ()">
 			<input class="bt" type="button" name="del" id="del" value="/" OnClick="ddel ()">
+			<br>
+			<input type="button" name="" id="sqr" style="background-color: orange;" class="bt" value="кв корень" OnClick="sqrt ()">
+			<input type="button" name="" id="sin" style="background-color: orange;" class="bt" value="Sin" OnClick="sins ()">
+			<input type="button" name="" id="cs" style="background-color: orange;" class="bt" value="Cos" OnClick="cos ()">
  		</div>
  	</div>
  	<script type="text/javascript">
@@ -49,6 +53,89 @@
  		let x = document.querySelector ('#ymn')
  		let dell = document.querySelector ('#del')
  		let btt1 = document.querySelector ('.bt1')
+ 		function cos () {
+ 			tablo.value = Math.cos(tablo.value); 		}
+ 		function sins () {
+ 			var x = Math.sin(tablo.value)
+ 			x.toFixed(2)
+ 			tablo.value = x
+ 			cb.style.borderColor = 'red';
+ 		}
+ 		function sqrt () {
+ 			tablo.value = Math.sqrt (tablo.value)
+ 			cb.style.borderColor = 'red';
+
+ 		}
+ 		function btt1 () {
+ 			tablo.value += '1'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt2 () {
+ 			tablo.value += '2'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt3 () {
+ 			tablo.value += '3'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt4 () {
+ 			tablo.value += '4'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt5 () {
+ 			tablo.value += '5'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt6 () {
+ 			tablo.value += '6'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt7 () {
+ 			tablo.value += '7'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt8 () {
+ 			tablo.value += '8'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt9 () {
+ 			tablo.value += '9'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt0 () {
+ 			tablo.value += '0'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
  		if (tablo.value == "undefined") {
  				tablo.value = 'очебка';
  				cb.style.backgroundColor = 'red';
@@ -56,6 +143,7 @@
  		function ddel () {
  			if (tablo.value == "") {
  				tablo.value += 'ошибка'
+ 				cb.style.borderColor = 'red';
  			} else {
  				tablo.value += '/'
  			};
@@ -68,6 +156,7 @@
  		function xx () {
  			if (tablo.value == "") {
  				tablo.value += 'ошибка'
+ 				cb.style.borderColor = 'red';
  			} else {
  				tablo.value += '*'
  			};
@@ -80,6 +169,7 @@
  		function rravvno () {
  			if (tablo.value == "") {
  				tablo.value += 'ошибка'
+ 				cb.style.borderColor = 'red';
  			} else {
  				tablo.value = '='+' '+eval(tablo.value)
  			};
@@ -87,7 +177,7 @@
  			plusb.style.display = 'inline-block'
  			x.style.display = 'inline-block'
  			dell.style.display = 'inline-block'
- 			cb.style.backgroundColor = 'red';
+ 			cb.style.borderColor = 'red';
  		}
  		function ccb () {
  			tablo.value = ''
@@ -95,12 +185,12 @@
  			plusb.style.display = 'inline-block'
  			x.style.display = 'inline-block'
  			dell.style.display = 'inline-block'
- 			cb.style.backgroundColor = 'white';
- 			btt1.style.display = 'inline-block';
+ 			cb.style.borderColor = 'silver';
  		}
  		function plus () {
  			if (tablo.value == "") {
  				tablo.value += 'ошибка'
+ 				cb.style.borderColor = 'red';
  			} else {
  				tablo.value += '+'
  			};
@@ -111,11 +201,7 @@
  			
  		};
  		function minusb () {
- 			if (tablo.value == "") {
- 				tablo.value += 'ошибка'
- 			} else {
- 				tablo.value += '-'
- 			};
+ 			tablo.value += '-'
  			minuss.style.display = 'none';
  			plusb.style.display = 'none';
  			x.style.display = 'none'
