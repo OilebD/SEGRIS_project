@@ -1,1 +1,218 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>обыденный калкуклятор</title>
+ 	<style>
+ 		#tablo {
+ 			width: 248px; height: 50px; text-align: right; font-size: 45px;
+ 		}
+ 		.bt {
+ 			width: 60px; height: 60px; background-color: white; border: silver 3px solid; margin-top: 5px; vertical-align: top;
+ 		}
+ 		.br {
+ 			border: 3px solid orange; width: 260px; height: 400px;
+ 		}
+ 		.d1 {
+ 			width: 255px; margin: 0 auto; margin-top: 5px;
+ 		}
+ 		
+ 	</style>
+ </head>
+ <body>
+ 	<div class="br">
+ 		<div class="d1">
+ 			<input type="text" name="" id="tablo">
+ 			<div>
+ 				<input class="bt"  type="button" name="b1" id="b1" value="1" OnClick="btt1 ()" id="b1">
+				<input class="bt"  type="button" name="b2" id="b2" value="2" OnClick="btt2 ()">
+				<input class="bt"  type="button" name="b3" id="b3" value="3" OnClick="btt3 ()">
+				<input class="bt" style="background-color: orange"  type="button" name="plus" value="+" id="plusb" OnClick="plus ()">
+				<br> 
+				<input class="bt"  type="button" name="b4" id="b4" value="4" OnClick="btt4 ()">
+				<input class="bt" type="button" name="b5" id="b5" value="5" OnClick="btt5 ()">
+				<input class="bt"  type="button" name="b6" id="b6" value="6" OnClick="btt6 ()">
+				<input class="bt" style="background-color: orange" type="button" name="minus" value="-" OnClick="minusb ()" id="minus">
+				<br> 
+				<input class="bt" type="button" name="b7" id="b7" value="7" OnClick="btt7 ()">
+				<input class="bt" type="button" name="b8" id="b8" value="8" OnClick="btt8 ()">
+				<input class="bt" type="button" name="b9" id="b9" value="9" OnClick="btt9 ()">
+				<input class="bt" style="background-color: orange" type="button" name="ymn" id="ymn" value="x" OnClick="xx ()">
+				<br> 
+				<input class="bt" type="button" name="clear" value="c" id="clear" OnClick="ccb ()">
+				<input class="bt"  type="button" name="b0" id="b0" value="0" OnClick="btt0 ()">
+				<input type="button" class="bt" name="">
+				<input class="bt" type="button" style="background-color: orange" name="del" id="del" value="/" OnClick="ddel ()">
+				<br>
+				<input type="button" name="" id="sin" style="background-color: orange;" class="bt" value="Sin" OnClick="sins ()">
+				<input type="button" name="" id="sqr" style="background-color: orange;" class="bt" value="√" OnClick="sqrt ()">
+				<input type="button" name="" id="cs" style="background-color: orange;" class="bt" value="Cos" OnClick="cos ()">
+				<input class="bt" type="button" style="background-color: orange" name="ravno" id="ravno" value="=" OnClick="rravvno ()">
+			</div>
+ 		</div>
+ 	</div>
+ 	<script type="text/javascript">
+ 		let plusb = document.querySelector ('#plusb')
+ 		let tablo = document.querySelector ('#tablo')
+ 		let cb = document.querySelector ('#clear')
+ 		let minuss = document.querySelector ('#minus')
+ 		let rravno = document.querySelector ('#ravno')
+ 		let x = document.querySelector ('#ymn')
+ 		let dell = document.querySelector ('#del')
+ 		function cos () {
+ 			tablo.value = Math.cos(tablo.value); 		}
+ 		function sins () {
+ 			var x = Math.sin(tablo.value)
+ 			x.toFixed(2)
+ 			tablo.value = x
+ 			cb.style.borderColor = 'red';
+ 		}
+ 		function sqrt () {
+ 			tablo.value = Math.sqrt (tablo.value)
+ 			cb.style.borderColor = 'red';
 
+ 		}
+ 		function btt1 () {
+ 			tablo.value += '1'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt2 () {
+ 			tablo.value += '2'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt3 () {
+ 			tablo.value += '3'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt4 () {
+ 			tablo.value += '4'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt5 () {
+ 			tablo.value += '5'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt6 () {
+ 			tablo.value += '6'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt7 () {
+ 			tablo.value += '7'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt8 () {
+ 			tablo.value += '8'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt9 () {
+ 			tablo.value += '9'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		function btt0 () {
+ 			tablo.value += '0'
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 		}
+ 		if (tablo.value == "undefined") {
+ 				tablo.value = 'очебка';
+ 				cb.style.backgroundColor = 'red';
+ 			}
+ 		function ddel () {
+ 			if (tablo.value == "") {
+ 				tablo.value += 'ошибка'
+ 				cb.style.borderColor = 'red';
+ 			} else {
+ 				tablo.value += '/'
+ 			};
+ 			minuss.style.display = 'none';
+ 			plusb.style.display = 'none';
+ 			x.style.display = 'none'
+ 			dell.style.display = 'none'
+ 			
+ 		}
+ 		function xx () {
+ 			if (tablo.value == "") {
+ 				tablo.value += 'ошибка'
+ 				cb.style.borderColor = 'red';
+ 			} else {
+ 				tablo.value += '*'
+ 			};
+ 			minuss.style.display = 'none';
+ 			plusb.style.display = 'none';
+ 			x.style.display = 'none';
+ 			dell.style.display = 'none';
+ 			
+ 		}
+ 		function rravvno () {
+ 			if (tablo.value == "") {
+ 				tablo.value += 'ошибка'
+ 				cb.style.borderColor = 'red';
+ 			} else {
+ 				tablo.value = '='+' '+eval(tablo.value)
+ 			};
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 			cb.style.borderColor = 'red';
+ 		}
+ 		function ccb () {
+ 			tablo.value = ''
+ 			minuss.style.display = 'inline-block';
+ 			plusb.style.display = 'inline-block'
+ 			x.style.display = 'inline-block'
+ 			dell.style.display = 'inline-block'
+ 			cb.style.borderColor = 'silver';
+ 		}
+ 		function plus () {
+ 			if (tablo.value == "") {
+ 				tablo.value += 'ошибка'
+ 				cb.style.borderColor = 'red';
+ 			} else {
+ 				tablo.value += '+'
+ 			};
+ 			minuss.style.display = 'none';
+ 			plusb.style.display = 'none';
+ 			x.style.display = 'none'
+ 			dell.style.display = 'none'
+ 			
+ 		};
+ 		function minusb () {
+ 			tablo.value += '-'
+ 			minuss.style.display = 'none';
+ 			plusb.style.display = 'none';
+ 			x.style.display = 'none'
+ 			dell.style.display = 'none'
+ 			
+ 		}
+ 	</script>
+ </body>
+ </html>
